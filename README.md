@@ -17,7 +17,7 @@ Title Picker is a Chrome extension that simplifies the process of capturing the 
 1. Install the extension by clonins this repo.
 2. Click on the Title Picker icon in the Chrome toolbar.
 3. The title of the active tab will be displayed in a popup window.
-4. Click the "Copy to Clipboard" button to copy the title.
+4. Click the "Copy Title" button to copy the title.
 
 ## Owner/Credits
 
