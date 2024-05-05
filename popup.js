@@ -1,18 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let getTitleButton = document.getElementById("getTitleButton");
-  let copyButton = document.getElementById("copyButton");
+  const getTitleButton = document.getElementById("getTitleButton");
+  const copyButton = document.getElementById("copyButton");
+  const tabTitleElement = document.getElementById("tabTitle");
 
   getTitleButton.addEventListener("click", function () {
-    document.getElementById("tabTitle").textContent = "Loading...";
+    tabTitleElement.textContent = "Loading...";
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-      let tab = tabs[0];
-      document.getElementById("tabTitle").textContent = tab.title;
+      const tab = tabs[0];
+      tabTitleElement.textContent = tab.title;
       copyButton.classList.remove("hidden");
     });
   });
 
   copyButton.addEventListener("click", function () {
-    const tabTitle = document.getElementById("tabTitle").textContent;
+    const tabTitle = tabTitleElement.textContent;
     copyTextToClipboard(tabTitle);
     copyButton.textContent = "Title Copied";
     copyButton.disabled = true;
@@ -24,10 +25,5 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function copyTextToClipboard(text) {
-  const textarea = document.createElement("textarea");
-  textarea.value = text;
-  document.body.appendChild(textarea);
-  textarea.select();
-  document.execCommand("copy");
-  document.body.removeChild(textarea);
+  navigator.clipboard.writeText(text);
 }
