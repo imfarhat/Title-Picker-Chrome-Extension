@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Tab Title Picker by Imran Farhat",
-  "short_name": "Tab Title Picker",
+  "name": "Title Picker by Imran Farhat",
+  "short_name": "Title Picker",
   "version": "1.0",
-  "description": "Show the title of the active tab in a popup",
+  "description": "Automatically picks up the title of the active tab on click of a button and display it. Also enables user to copy the title.",
   "permissions": ["activeTab"],
   "action": {
     "default_popup": "popup.html",
