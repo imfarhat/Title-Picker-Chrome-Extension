@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Title Picker by Imran Farhat",
+  "short_name": "Tab Title Picker",
+  "version": "1.0",
+  "description": "Show the title of the active tab in a popup",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
