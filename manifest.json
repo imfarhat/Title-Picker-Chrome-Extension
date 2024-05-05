@@ -3,7 +3,7 @@
   "name": "Title Picker by Imran Farhat",
   "short_name": "Title Picker",
   "version": "1.0",
-  "description": "Automatically picks up the title of the active tab on click of a button and display it. Also enables user to copy the title to clipboard. Developed by Imran Farhat (Visit Portfolio: https://farhat.vercel.app)",
+  "description": "Automatically picks up the title of the active tab on click of a button and display it. Also enables user to copy the title to clipboard. Developed by Imran Farhat (https://farhat.vercel.app)",
   "permissions": ["activeTab"],
   "action": {
     "default_popup": "popup.html",
