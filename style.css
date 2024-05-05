@@ -31,6 +31,7 @@ h1 {
   transition: all 200ms ease-in;
   cursor: pointer;
   font-size: 0.9rem;
+  user-select: none;
 }
 
 .getTitleButton:hover {
@@ -68,6 +69,11 @@ h1 {
   transition: all 200ms ease-in;
   cursor: pointer;
   font-size: 0.8rem;
+  user-select: none;
+}
+.copyButton:disabled {
+  pointer-events: none;
+  opacity: 0.75;
 }
 
 .copyButton:hover {
