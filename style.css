@@ -63,12 +63,12 @@ h1 {
   background-color: rgb(5, 139, 248);
   border: none;
   color: #fdfdff;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1rem;
   font-weight: 500;
   transition: all 200ms ease-in;
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   user-select: none;
 }
 .copyButton:disabled {
