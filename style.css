@@ -1,7 +1,7 @@
 body {
   background-color: aliceblue;
   width: 25rem;
-  min-height: 15rem;
+  min-height: 16rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,4 +48,36 @@ h1 {
   border-radius: 0.5rem;
   padding: 1rem;
   font-size: 0.9rem;
+}
+.tabTitleContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.copyButton {
+  background-color: rgb(5, 139, 248);
+  border: none;
+  color: #fdfdff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.copyButton:hover {
+  background-color: rgb(0, 121, 228);
+}
+
+.copyButton:active {
+  scale: 0.95;
+}
+
+.hidden {
+  display: none;
 }
