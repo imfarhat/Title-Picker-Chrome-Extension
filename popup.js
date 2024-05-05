@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   copyButton.addEventListener("click", function () {
     const tabTitle = tabTitleElement.textContent;
     copyTextToClipboard(tabTitle);
-    copyButton.textContent = "Title Copied";
+    copyButton.textContent = "Copied ✓";
     copyButton.disabled = true;
     setTimeout(() => {
       copyButton.textContent = "Copy Title";
