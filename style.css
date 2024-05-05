@@ -73,7 +73,7 @@ h1 {
 }
 .copyButton:disabled {
   pointer-events: none;
-  opacity: 0.75;
+  opacity: 0.85;
 }
 
 .copyButton:hover {
@@ -81,7 +81,7 @@ h1 {
 }
 
 .copyButton:active {
-  scale: 0.95;
+  scale: 0.90;
 }
 
 .hidden {
